@@ -31,8 +31,8 @@ const Pagenavbar = () => {
                     <Link
                         href="/"
                         className={`px-4 py-1.5 text-sm font-bold transition rounded-full ${pathname === "/"
-                                ? "bg-[#1a2e05] text-[#CCFF00]"
-                                : "text-gray-400 hover:text-[#CCFF00]"
+                            ? "bg-[#1a2e05] text-[#CCFF00]"
+                            : "text-gray-400 hover:text-[#CCFF00]"
                             }`}
                         role="tab"
                     >
@@ -42,8 +42,8 @@ const Pagenavbar = () => {
                     <Link
                         href="/component/myplan"
                         className={`px-4 py-1.5 text-sm font-bold transition rounded-full ${pathname === "/component/myplan"
-                                ? "bg-[#1a2e05] text-[#CCFF00]"
-                                : "text-gray-400 hover:text-[#CCFF00]"
+                            ? "bg-[#1a2e05] text-[#CCFF00]"
+                            : "text-gray-400 hover:text-[#CCFF00]"
                             }`}
                         role="tab"
                     >
@@ -70,7 +70,7 @@ const Pagenavbar = () => {
                         className="flex items-center gap-2 px-3 py-1.5 text-sm font-bold"
                     >
                         <span className="text-gray-300">Saved</span>
-                        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#ccff00] text-xs font-bold text-black">
+                        <span className="flex h-6 w-6 items-center justify-center rounded-full border border-[#ccff00] text-xs font-bold text-[#ccff00]">
                             0
                         </span>
                     </Link>
