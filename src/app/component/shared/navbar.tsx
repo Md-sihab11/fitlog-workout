@@ -1,15 +1,16 @@
-"use client"; // Next.js-এ hook use korar jonno eta proyojon
+"use client"; 
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // usePathname import kora holo
+import { usePathname } from "next/navigation"; 
 import logo from "@/assets/logo.png";
 
 const Pagenavbar = () => {
-    const pathname = usePathname(); // current URL path pete
+    const pathname = usePathname(); 
 
     return (
-        <nav role="tablist" className="tabs tabs-border bg-[#0C0D10] text-white">
+        <nav  role="tablist"
+    className="bg-[#0C0D10] text-white border-b border-gray-700/30">
             <div className="container mx-auto flex items-center justify-between px-4 py-4">
 
                 {/* Left: Logo & Brand Name */}
@@ -78,8 +79,7 @@ const Pagenavbar = () => {
                 </div>
 
             </div>
-
-            <div className="divider m-0 opacity-20" />
+            {/* <div className="divider m-0 border-gray-700"></div> */}
         </nav>
     );
 };
