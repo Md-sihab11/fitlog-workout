@@ -1,16 +1,16 @@
-"use client"; 
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; 
+import { usePathname } from "next/navigation";
 import logo from "@/assets/logo.png";
 
 const Pagenavbar = () => {
-    const pathname = usePathname(); 
+    const pathname = usePathname();
 
     return (
-        <nav  role="tablist"
-    className="bg-[#0C0D10] text-white border-b border-gray-700/30">
+        <nav role="tablist"
+            className="bg-[#0C0D10] text-white border-b border-gray-700/30">
             <div className="container mx-auto flex items-center justify-between px-4 py-4">
 
                 {/* Left: Logo & Brand Name */}
@@ -30,11 +30,10 @@ const Pagenavbar = () => {
                 <div className="flex items-center gap-2">
                     <Link
                         href="/"
-                        className={`px-4 py-1.5 text-sm font-bold transition rounded-full ${
-                            pathname === "/" 
-                                ? "bg-[#1a2e05] text-[#CCFF00]" 
+                        className={`px-4 py-1.5 text-sm font-bold transition rounded-full ${pathname === "/"
+                                ? "bg-[#1a2e05] text-[#CCFF00]"
                                 : "text-gray-400 hover:text-[#CCFF00]"
-                        }`}
+                            }`}
                         role="tab"
                     >
                         Workouts
@@ -42,11 +41,10 @@ const Pagenavbar = () => {
 
                     <Link
                         href="/component/myplan"
-                        className={`px-4 py-1.5 text-sm font-bold transition rounded-full ${
-                            pathname === "/component/myplan" 
-                                ? "bg-[#1a2e05] text-[#CCFF00]" 
+                        className={`px-4 py-1.5 text-sm font-bold transition rounded-full ${pathname === "/component/myplan"
+                                ? "bg-[#1a2e05] text-[#CCFF00]"
                                 : "text-gray-400 hover:text-[#CCFF00]"
-                        }`}
+                            }`}
                         role="tab"
                     >
                         My Plan
